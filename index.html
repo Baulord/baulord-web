@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f4f0">
+  <meta name="theme-color" content="#07090B">
   <meta name="description" content="Baulord s.r.o. – rekonstrukce a zednické práce v Jihomoravském kraji. Kontaktujte nás telefonicky nebo přes WhatsApp.">
   <title>Baulord s.r.o. | Rekonstrukce a zednické práce</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root{--bg:#f5f4f0;--white:#fff;--ink:#222a30;--muted:#626a70;--accent:#c8793a;--line:#e4e2dc;--green:#16845b}
+    :root{--bg:#07090B;--white:#101316;--ink:#222a30;--muted:#626a70;--accent:#c8793a;--line:#e4e2dc;--green:#16845b}
     *{box-sizing:border-box;margin:0;padding:0}
     html{scroll-behavior:smooth;scroll-padding-top:90px}
     body{background:var(--bg);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
@@ -80,11 +80,11 @@
     .contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:start}
     .contact .section-desc{color:#c4c8ca;margin-top:20px}
     .contact-methods{margin-top:32px;display:grid;gap:15px}
-    .contact-method{display:flex;align-items:center;gap:15px;border:1px solid #ffffff24;padding:16px;border-radius:5px;overflow-wrap:anywhere}
+    .contact-method{display:flex;align-items:center;gap:15px;border:1px solid #101316fff24;padding:16px;border-radius:5px;overflow-wrap:anywhere}
     .contact-method .service-icon{margin:0;flex-shrink:0}
     .contact-method small{display:block;color:#c4c8ca}
     .contact-method strong{font-size:15px}
-    .contact-form{padding:30px;background:#fff;color:var(--ink);border-radius:6px}
+    .contact-form{padding:30px;background:#101316;color:var(--ink);border-radius:6px}
     .contact-form h3{font-size:23px;margin-bottom:22px}
     .form-fields{display:grid;gap:15px}
     .form-fields input,.form-fields select,.form-fields textarea{width:100%;padding:14px;background:#faf9f7;color:var(--ink);border:1px solid #dfddd7;border-radius:4px;font:inherit;font-size:14px}
@@ -97,7 +97,7 @@
     .footer-inner p{color:var(--muted);font-size:13px}
     .footer-links{display:flex;gap:20px;font-size:13px}
     .legal{font-size:12px;color:var(--muted);padding-top:12px;border-top:1px solid var(--line);margin-top:16px}
-    .floating-whatsapp{position:fixed;right:20px;bottom:20px;z-index:15;background:var(--green);color:white;padding:13px 18px;border-radius:40px;box-shadow:0 5px 22px #0002;font-size:14px;font-weight:700}
+    .floating-whatsapp{position:fixed;right:20px;bottom:20px;z-index:15;background:var(--green);color:white;padding:13px 18px;border-radius:40px;box-shadow:0 5px 22px #0506072;font-size:14px;font-weight:700}
     .floating-whatsapp:hover{background:#116a49}
     @media(max-width:950px){.nav-links{gap:15px}.nav-actions .btn{padding:11px 13px}.hero-grid,.about-grid{gap:35px}.hero-photo{height:420px}.photo-note{left:-10px}.contact-grid{gap:35px}}
     @media(max-width:760px){
@@ -119,7 +119,44 @@
       .footer-inner{align-items:flex-start;flex-direction:column}.floating-whatsapp{right:12px;bottom:12px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition-duration:.01ms!important}}
-  </style>
+  
+/* Baulord brand theme: black, white and cyan */
+:root {
+  color-scheme: dark;
+  --brand-black: #050607;
+  --brand-panel: #101316;
+  --brand-cyan: #00E5E5;
+  --brand-white: #F5F7FA;
+}
+body { background: var(--brand-black) !important; color: var(--brand-white) !important; }
+header, nav, footer, .card, .service-card, .contact-card, .process-card, .gallery-card,
+.panel, .box, .faq-item, .form-card, .about-card {
+  background-color: var(--brand-panel) !important;
+  color: var(--brand-white) !important;
+  border-color: #252B31 !important;
+}
+h1, h2, h3, h4, p, li, label, small, .muted, .eyebrow { color: inherit; }
+a { color: var(--brand-cyan); }
+a:hover { color: #7FFFFF; }
+button, .btn, .button, input[type="submit"] {
+  background: var(--brand-cyan) !important;
+  color: #050607 !important;
+  border-color: var(--brand-cyan) !important;
+}
+input, textarea, select {
+  background: #171B20 !important;
+  color: var(--brand-white) !important;
+  border-color: #353D45 !important;
+}
+::placeholder { color: #A5B0BA !important; }
+.brand img { width: 112px; height: 58px; object-fit: contain; background: #000; }
+
+
+.contact-directors { margin-top: 1rem; padding: 1rem 1.1rem; border: 1px solid #252B31; border-left: 3px solid #00E5E5; border-radius: 12px; background: #101316; color: #F5F7FA; }
+.contact-directors strong { color: #00E5E5; }
+.contact-directors p { margin: .4rem 0 0; line-height: 1.7; }
+
+</style>
 </head>
 <body>
 <header>
@@ -141,6 +178,8 @@
     <div class="container hero-grid">
       <div>
         <p class="eyebrow">Baulord s.r.o. · Jihomoravský kraj</p>
+            <p class="contact-directors"><strong>Jednatelé:</strong><br>Jiří Máša<br>Luděk Robek</p>
+            
         <h1>Nový prostor.<br><span>Nový začátek.</span></h1>
         <p class="hero-copy">Rekonstrukce a zednické práce pro byty, domy i další prostory. Poctivé řemeslo, pečlivé provedení a domluva, na kterou se můžete spolehnout.</p>
         <div class="hero-buttons">
@@ -244,7 +283,7 @@
         <p id="form-status" role="status" aria-live="polite"></p>
       </div>
     </div>
-  </section>
+  <div class="contact-directors"><strong>Jednatelé:</strong><p>Jiří Máša<br>Luděk Robek</p></div></section>
 </main>
 
 <footer>
